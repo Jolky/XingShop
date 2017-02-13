@@ -1,13 +1,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jolky.xingshop">
 
+
+    <!--allowbackup是一个是否允许备份系统和用户数据的属性，应因此而引发Android的安全性问题。
+        supportsRtl是否愿意支持从右到左(原来RTL就是right-to-left 的缩写...)的布局-->
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.jolky.xingshop.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
